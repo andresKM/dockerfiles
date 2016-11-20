@@ -26,5 +26,6 @@ WORKDIR $ES_HOME
 
 COPY start /start
 COPY log4j2.properties $ES_HOME/config/
+COPY elasticsearch.yml $ES_HOME/config/
 
 CMD ["/start"]
